@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Postcard — GTA-style cover maker</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">LP</span>
+    <div>
+      <h1>Leonida Postcard</h1>
+      <p>Turn any photo into GTA-style cover art. Runs offline — your photos never leave this machine.</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <button id="undo" type="button" title="Undo (Ctrl+Z)">Undo</button>
+    <button id="redo" type="button" title="Redo (Ctrl+Shift+Z)">Redo</button>
+    <button id="shuffle" type="button" title="Shuffle layout and grade">Shuffle</button>
+  </div>
+</header>
+
+<main class="app">
+  <section class="stage">
+    <canvas id="cover" width="960" height="540" aria-label="Cover preview"></canvas>
+    <p id="hint" class="hint">Click a panel to select it — drag to pan the photo, scroll to zoom.</p>
+    <p id="status" class="status" role="status"></p>
+  </section>
+
+  <aside class="panel">
+    <section class="group">
+      <h2>Photos</h2>
+      <div id="tray" class="tray" aria-label="Photo tray"></div>
+      <label class="upload">Add photos
+        <input id="upload" type="file" accept="image/*" multiple>
+      </label>
+      <p class="note">Drop images onto the tray, or pick files. Two samples are loaded to start.</p>
+    </section>
+
+    <section class="group">
+      <h2>Layout</h2>
+      <div id="layouts" class="picker" role="group" aria-label="Layout"></div>
+    </section>
+
+    <section class="group">
+      <h2>Grade</h2>
+      <div id="grades" class="swatches" role="group" aria-label="Grade"></div>
+    </section>
+
+    <section class="group">
+      <h2>Caption</h2>
+      <label class="field">Title
+        <input id="title" type="text" maxlength="48" value="Neon Shore">
+      </label>
+      <label class="field">Subtitle
+        <input id="subtitle" type="text" maxlength="48" value="Leonida nights">
+      </label>
+      <label class="check"><input id="gradientTitle" type="checkbox" checked> Sunset-gradient title</label>
+      <label class="check"><input id="halftoneTitle" type="checkbox"> Halftone fade on title</label>
+    </section>
+
+    <section class="group">
+      <h2>Selected panel</h2>
+      <p id="panelName" class="panel-name">Hero — click a panel on the cover</p>
+      <label class="field">Photo in this panel
+        <select id="panelPhoto"></select>
+      </label>
+      <label class="field">Zoom
+        <input id="panelZoom" type="range" min="1" max="3" step="0.05" value="1">
+      </label>
+      <button id="panelRotate" type="button">Rotate 90°</button>
+    </section>
+
+    <section class="group">
+      <h2>Export size</h2>
+      <div id="sizes" class="picker" role="group" aria-label="Export size"></div>
+      <div class="export-row">
+        <button id="export" type="button" class="primary">Export PNG</button>
+        <button id="exportAll" type="button" class="primary">Export all sizes</button>
+      </div>
+      <label class="check"><input id="grain" type="checkbox" checked> Film grain</label>
+      <label class="check"><input id="vignette" type="checkbox" checked> Vignette</label>
+    </section>
+
+    <p class="foot">Leonida Postcard — an original cover maker. No Rockstar Games logo, artwork or font.</p>
+  </aside>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
