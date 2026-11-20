@@ -1,8 +1,8 @@
 # Leonida Postcard — GTA-style cover maker
 
-[![gta6-cover-art-01](https://make.fun/api/competitions/gta6-cover-art-01/badge.svg)](https://make.fun/bounty/gta6-cover-art-01)
-[![muherilobak-web/gta6-cover-art](https://make.fun/api/repos/muherilobak-web/gta6-cover-art/rank.svg)](https://make.fun/bounty/gta6-cover-art-01)
-[![Reward](https://make.fun/api/repos/muherilobak-web/gta6-cover-art/reward.svg)](https://make.fun/bounty/gta6-cover-art-01)
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![rank](https://make.fun/badge/gta6-cover-art-01/muherilobak-web/gta6-cover-art/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![reward](https://make.fun/badge/gta6-cover-art-01/muherilobak-web/gta6-cover-art/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 
 An offline web app that turns any photo and a caption into GTA-style cover
 art — the multi-panel poster look with bold caption lettering and a Vice City
